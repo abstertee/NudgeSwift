@@ -21,6 +21,7 @@ func nudgeStartLogic() {
                 print("Device in demo mode")
             } else {
                 print("Device fully up-to-date.")
+                // Helper tool will not install if system is fully updated
                 AppKit.NSApp.terminate(nil)
             }
         }

@@ -7,6 +7,9 @@
 import ServiceManagement
 import Cocoa
 import Foundation
+
+
+
 class HelperConnection: NSObject, HelperConnectProtocol {
     // MARK: -
     // MARK: AppProtocol Methods
