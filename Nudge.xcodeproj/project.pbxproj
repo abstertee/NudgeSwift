@@ -34,6 +34,9 @@
 		D0EB412B25D607580030E368 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB412925D607580030E368 /* HelperConstants.swift */; };
 		D0EB413125D607800030E368 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB413025D607800030E368 /* Helper.swift */; };
 		D0EB414025D60C310030E368 /* CodesignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB413F25D60C310030E368 /* CodesignCheck.swift */; };
+		D0EB414725D60DD40030E368 /* HelperConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB414625D60DD40030E368 /* HelperConnect.swift */; };
+		D0EB414D25D60DE90030E368 /* HelperConnectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB414C25D60DE90030E368 /* HelperConnectProtocol.swift */; };
+		D0EB415325D60E7F0030E368 /* HelperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB415225D60E7F0030E368 /* HelperDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		D0EB413B25D60B5B0030E368 /* NudgeSwiftHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NudgeSwiftHelper-Info.plist"; sourceTree = "<group>"; };
 		D0EB413D25D60BC50030E368 /* CodeSignUpdate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CodeSignUpdate.sh; sourceTree = "<group>"; };
 		D0EB413F25D60C310030E368 /* CodesignCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesignCheck.swift; sourceTree = "<group>"; };
+		D0EB414625D60DD40030E368 /* HelperConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConnect.swift; sourceTree = "<group>"; };
+		D0EB414C25D60DE90030E368 /* HelperConnectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConnectProtocol.swift; sourceTree = "<group>"; };
+		D0EB415225D60E7F0030E368 /* HelperDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 		63D7D0E125C9E9A400236281 /* Nudge */ = {
 			isa = PBXGroup;
 			children = (
+				D0EB414525D60DBB0030E368 /* HelperConnect */,
 				63D7D0E225C9E9A400236281 /* NudgeApp.swift */,
 				63D7D0E425C9E9A400236281 /* ContentView.swift */,
 				63D7D12625C9F1EE00236281 /* Nudge.swift */,
@@ -247,6 +254,16 @@
 				D0EB413F25D60C310030E368 /* CodesignCheck.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		D0EB414525D60DBB0030E368 /* HelperConnect */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB414625D60DD40030E368 /* HelperConnect.swift */,
+				D0EB414C25D60DE90030E368 /* HelperConnectProtocol.swift */,
+				D0EB415225D60E7F0030E368 /* HelperDelegate.swift */,
+			);
+			path = HelperConnect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,14 +420,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EB414725D60DD40030E368 /* HelperConnect.swift in Sources */,
 				D0EB412A25D607580030E368 /* HelperConstants.swift in Sources */,
 				D0EB411525D606B60030E368 /* HelperAuthorizationRight.swift in Sources */,
 				0B0CCEDA25CE1C7C00A93D43 /* OSVersion.swift in Sources */,
 				639E198A25CD9E21008F618B /* Utils.swift in Sources */,
 				D0EB411C25D606E60030E368 /* HelperAuthorization.swift in Sources */,
 				636C4B7625D4306A0004A791 /* UILogic.swift in Sources */,
+				D0EB414D25D60DE90030E368 /* HelperConnectProtocol.swift in Sources */,
 				D0EB412325D6070E0030E368 /* HelperProtocol.swift in Sources */,
 				636C4B4A25D1BECE0004A791 /* defaults.swift in Sources */,
+				D0EB415325D60E7F0030E368 /* HelperDelegate.swift in Sources */,
 				63D7D0E525C9E9A400236281 /* ContentView.swift in Sources */,
 				63D7D12725C9F1EE00236281 /* Nudge.swift in Sources */,
 				639E198225CD885D008F618B /* nudgePrefs.swift in Sources */,
