@@ -23,6 +23,17 @@
 		63D7D0F625C9E9A500236281 /* NudgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7D0F525C9E9A500236281 /* NudgeTests.swift */; };
 		63D7D10125C9E9A500236281 /* NudgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7D10025C9E9A500236281 /* NudgeUITests.swift */; };
 		63D7D12725C9F1EE00236281 /* Nudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D7D12625C9F1EE00236281 /* Nudge.swift */; };
+		D0EB410F25D6067C0030E368 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB410E25D6067C0030E368 /* main.swift */; };
+		D0EB411525D606B60030E368 /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB411425D606B60030E368 /* HelperAuthorizationRight.swift */; };
+		D0EB411625D606B60030E368 /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB411425D606B60030E368 /* HelperAuthorizationRight.swift */; };
+		D0EB411C25D606E60030E368 /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB411B25D606E60030E368 /* HelperAuthorization.swift */; };
+		D0EB411D25D606E60030E368 /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB411B25D606E60030E368 /* HelperAuthorization.swift */; };
+		D0EB412325D6070E0030E368 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB412225D6070E0030E368 /* HelperProtocol.swift */; };
+		D0EB412425D6070E0030E368 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB412225D6070E0030E368 /* HelperProtocol.swift */; };
+		D0EB412A25D607580030E368 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB412925D607580030E368 /* HelperConstants.swift */; };
+		D0EB412B25D607580030E368 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB412925D607580030E368 /* HelperConstants.swift */; };
+		D0EB413125D607800030E368 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB413025D607800030E368 /* Helper.swift */; };
+		D0EB414025D60C310030E368 /* CodesignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EB413F25D60C310030E368 /* CodesignCheck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +52,28 @@
 			remoteInfo = Nudge;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0EB40E825D605F90030E368 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EB40F225D606240030E368 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B0CCED925CE1C7C00A93D43 /* OSVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSVersion.swift; sourceTree = "<group>"; };
@@ -67,6 +100,17 @@
 		63D7D10025C9E9A500236281 /* NudgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NudgeUITests.swift; sourceTree = "<group>"; };
 		63D7D10225C9E9A500236281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63D7D12625C9F1EE00236281 /* Nudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nudge.swift; sourceTree = "<group>"; };
+		D0EB40F425D606240030E368 /* NudgeSwiftHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NudgeSwiftHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EB410E25D6067C0030E368 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D0EB411425D606B60030E368 /* HelperAuthorizationRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAuthorizationRight.swift; sourceTree = "<group>"; };
+		D0EB411B25D606E60030E368 /* HelperAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAuthorization.swift; sourceTree = "<group>"; };
+		D0EB412225D6070E0030E368 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		D0EB412925D607580030E368 /* HelperConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		D0EB413025D607800030E368 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D0EB413A25D60AE60030E368 /* NudgeHelper-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NudgeHelper-Launchd.plist"; sourceTree = "<group>"; };
+		D0EB413B25D60B5B0030E368 /* NudgeSwiftHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NudgeSwiftHelper-Info.plist"; sourceTree = "<group>"; };
+		D0EB413D25D60BC50030E368 /* CodeSignUpdate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CodeSignUpdate.sh; sourceTree = "<group>"; };
+		D0EB413F25D60C310030E368 /* CodesignCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodesignCheck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +135,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0EB40F125D606240030E368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		63D7D0D625C9E9A400236281 = {
 			isa = PBXGroup;
 			children = (
+				D0EB40FF25D606390030E368 /* Nudge-Helper */,
 				5870FF6425CFE5EC0036D203 /* Localizable.strings */,
 				63D7D0E125C9E9A400236281 /* Nudge */,
 				63D7D0F425C9E9A500236281 /* NudgeTests */,
@@ -111,6 +163,7 @@
 				63D7D0DF25C9E9A400236281 /* Nudge.app */,
 				63D7D0F125C9E9A500236281 /* NudgeTests.xctest */,
 				63D7D0FC25C9E9A500236281 /* NudgeUITests.xctest */,
+				D0EB40F425D606240030E368 /* NudgeSwiftHelper */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +216,39 @@
 			path = NudgeUITests;
 			sourceTree = "<group>";
 		};
+		D0EB40FF25D606390030E368 /* Nudge-Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB413E25D60C1E0030E368 /* Utility */,
+				D0EB413C25D60BAE0030E368 /* Scripts */,
+				D0EB413B25D60B5B0030E368 /* NudgeSwiftHelper-Info.plist */,
+				D0EB410E25D6067C0030E368 /* main.swift */,
+				D0EB411425D606B60030E368 /* HelperAuthorizationRight.swift */,
+				D0EB411B25D606E60030E368 /* HelperAuthorization.swift */,
+				D0EB412225D6070E0030E368 /* HelperProtocol.swift */,
+				D0EB412925D607580030E368 /* HelperConstants.swift */,
+				D0EB413025D607800030E368 /* Helper.swift */,
+				D0EB413A25D60AE60030E368 /* NudgeHelper-Launchd.plist */,
+			);
+			path = "Nudge-Helper";
+			sourceTree = "<group>";
+		};
+		D0EB413C25D60BAE0030E368 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB413D25D60BC50030E368 /* CodeSignUpdate.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		D0EB413E25D60C1E0030E368 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D0EB413F25D60C310030E368 /* CodesignCheck.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,6 +259,7 @@
 				63D7D0DB25C9E9A400236281 /* Sources */,
 				63D7D0DC25C9E9A400236281 /* Frameworks */,
 				63D7D0DD25C9E9A400236281 /* Resources */,
+				D0EB40E825D605F90030E368 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
@@ -219,13 +306,30 @@
 			productReference = 63D7D0FC25C9E9A500236281 /* NudgeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D0EB40F325D606240030E368 /* NudgeSwiftHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0EB40F825D606240030E368 /* Build configuration list for PBXNativeTarget "NudgeSwiftHelper" */;
+			buildPhases = (
+				D0EB40F025D606240030E368 /* Sources */,
+				D0EB40F125D606240030E368 /* Frameworks */,
+				D0EB40F225D606240030E368 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NudgeSwiftHelper;
+			productName = NudgeSwiftHelper;
+			productReference = D0EB40F425D606240030E368 /* NudgeSwiftHelper */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		63D7D0D725C9E9A400236281 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					63D7D0DE25C9E9A400236281 = {
@@ -238,6 +342,9 @@
 					63D7D0FB25C9E9A500236281 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 63D7D0DE25C9E9A400236281;
+					};
+					D0EB40F325D606240030E368 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -258,6 +365,7 @@
 				63D7D0DE25C9E9A400236281 /* Nudge */,
 				63D7D0F025C9E9A500236281 /* NudgeTests */,
 				63D7D0FB25C9E9A500236281 /* NudgeUITests */,
+				D0EB40F325D606240030E368 /* NudgeSwiftHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -295,9 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EB412A25D607580030E368 /* HelperConstants.swift in Sources */,
+				D0EB411525D606B60030E368 /* HelperAuthorizationRight.swift in Sources */,
 				0B0CCEDA25CE1C7C00A93D43 /* OSVersion.swift in Sources */,
 				639E198A25CD9E21008F618B /* Utils.swift in Sources */,
+				D0EB411C25D606E60030E368 /* HelperAuthorization.swift in Sources */,
 				636C4B7625D4306A0004A791 /* UILogic.swift in Sources */,
+				D0EB412325D6070E0030E368 /* HelperProtocol.swift in Sources */,
 				636C4B4A25D1BECE0004A791 /* defaults.swift in Sources */,
 				63D7D0E525C9E9A400236281 /* ContentView.swift in Sources */,
 				63D7D12725C9F1EE00236281 /* Nudge.swift in Sources */,
@@ -321,6 +433,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D7D10125C9E9A500236281 /* NudgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0EB40F025D606240030E368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EB411625D606B60030E368 /* HelperAuthorizationRight.swift in Sources */,
+				D0EB413125D607800030E368 /* Helper.swift in Sources */,
+				D0EB412B25D607580030E368 /* HelperConstants.swift in Sources */,
+				D0EB411D25D606E60030E368 /* HelperAuthorization.swift in Sources */,
+				D0EB410F25D6067C0030E368 /* main.swift in Sources */,
+				D0EB412425D6070E0030E368 /* HelperProtocol.swift in Sources */,
+				D0EB414025D60C310030E368 /* CodesignCheck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +741,24 @@
 			};
 			name = Release;
 		};
+		D0EB40F925D606240030E368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D0EB40FA25D606240030E368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -650,6 +794,15 @@
 			buildConfigurations = (
 				63D7D10C25C9E9A500236281 /* Debug */,
 				63D7D10D25C9E9A500236281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0EB40F825D606240030E368 /* Build configuration list for PBXNativeTarget "NudgeSwiftHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EB40F925D606240030E368 /* Debug */,
+				D0EB40FA25D606240030E368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
