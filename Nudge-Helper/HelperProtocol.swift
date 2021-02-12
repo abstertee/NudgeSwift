@@ -13,5 +13,5 @@ protocol HelperProtocol {
     func runCommandLs(withPath: String, completion: @escaping (NSNumber) -> Void)
     func runCommandLs(withPath: String, authData: NSData?, completion: @escaping (NSNumber) -> Void)
     func installPkgs(pkgFilePath: String, _ completion: @escaping (NSNumber) -> Void )
-    
+    func updateOs(_ completion: @escaping (NSNumber) -> Void)
 }

@@ -103,10 +103,13 @@ class Helper: NSObject, NSXPCListenerDelegate, HelperProtocol {
         // Run the task
         self.runTask(command: command, arguments: arguments, completion: completion)
     }
-    
-////////////////////////////////////////////////////////////////////////////
-/////// Login View Controller
-////////////////////////////////////////////////////////////////////////////
+
+    func updateOs(_ completion: @escaping (NSNumber) -> Void ) {
+        let command = "/usr/sbin/softwareupdate"
+        let arguments = ["-i", "-a"]
+        
+        self.runTask(command: command, arguments: arguments, completion: completion)
+    }
     
     func installPkgs(pkgFilePath: String, _ completion: @escaping (NSNumber) -> Void ) {
         let command = "/usr/sbin/installer"
