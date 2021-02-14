@@ -27,7 +27,11 @@ struct Utils {
     }
     
     func demoModeEnabled() -> Bool {
-        return CommandLine.arguments.contains("-demo")
+        return CommandLine.arguments.contains("-demo-mode")
+    }
+
+    func forceScreenShotIconModeEnabled() -> Bool {
+        return CommandLine.arguments.contains("-force-screenshot-icon")
     }
     
     func fullyUpdated() -> Bool {
@@ -69,10 +73,16 @@ struct Utils {
         Date()
     }
     
+    func getJSONUrl() -> String {
+        // let jsonURL = UserDefaults.standard.volatileDomain(forName: UserDefaults.argumentDomain)
+        let jsonURL = UserDefaults.standard.string(forKey: "json-url") ?? "file:///Library/Preferences/com.github.macadmins.Nudge.json" // For Greg Neagle
+        return jsonURL
+    }
+    
     func getInitialDate() -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM-dd-yyyy"
-        return dateFormatter.date(from: "08-06-2020") ?? Date()
+        return dateFormatter.date(from: "08-06-2020") ?? Date() // <3
     }
     
     func getMajorOSVersion() -> Int {
@@ -105,6 +115,9 @@ struct Utils {
     }
     
     func getSerialNumber() -> String {
+        if Utils().demoModeEnabled() {
+                return "C00000000000"
+        }
         // https://ourcodeworld.com/articles/read/1113/how-to-retrieve-the-serial-number-of-a-mac-with-swift
         var serialNumber: String? {
             let platformExpert = IOServiceGetMatchingService(kIOMasterPortDefault, IOServiceMatching("IOPlatformExpertDevice") )
@@ -151,7 +164,7 @@ struct Utils {
     }
 
     func openMoreInfo() {
-        guard let url = URL(string: informationButtonPath) else {
+        guard let url = URL(string: aboutUpdateURL) else {
             return
         }
         print("User clicked moreInfo button.")
@@ -162,12 +175,19 @@ struct Utils {
         return getCurrentDate() > requiredInstallationDate
     }
     
-    func requireDualCloseButtons() -> Bool {
+    func requireDualQuitButtons() -> Bool {
         return (approachingWindowTime / 24) >= getNumberOfDaysBetween()
     }
 
     func requireMajorUpgrade() -> Bool {
+        if requiredMinimumOSVersion == "0.0" {
+            return false
+        }
         return versionGreaterThanOrEqual(current_version: OSVersion(ProcessInfo().operatingSystemVersion).description, new_version: requiredMinimumOSVersion)
+    }
+    
+    func simpleModeEnabled() -> Bool {
+        return CommandLine.arguments.contains("-simple-mode")
     }
 
     func updateDevice() {

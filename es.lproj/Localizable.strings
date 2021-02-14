@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Nudge
+
+  Created by Erik Gomez on 2/12/21.
+  
+*/
+
+"Language:" = "Idioma:";
+
+//// Additional Device Information
+"Additional Device Information" = "Información adicional del dispositivo";
+// Username
+"Username:" = "Nombre de usuario:";
+// Serial Number
+"Serial Number:" = "Número de serie:";
+// Architecture
+"Architecture:" = "Arquitectura:";
+
+//// Left side of Nudge
+// Current OS Version
+"Current OS Version:" = "Versión actual del sistema operativo:";
+// Required OS Version
+"Required OS Version:" = "Versión requerida del sistema operativo:";
+// Days remaining to update
+"Days remaining to update:" = "Días restantes para actualizar:";
+// Ignored Count
+"Ignored Count:" = "Recuento ignorado:";
+
+// Help buttons
+"Click to close" = "Click para cerrar";
+"Click for additional device information" = "Haga clic para obtener información adicional sobre el dispositivo";
+"Click to zoom into screenshot" = "Haga clic para ampliar la captura de pantalla";
+"Click for more information about the security update" = "Haga clic para obtener más información sobre la actualización de seguridad.";
